@@ -2,7 +2,14 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
 \geometry{a4paper, margin=1in}
+
+\newcommand\chair{%
+  Ch\textcolor[HTML]{6B8ACD}{\textbf{AI}}r
+  \@}
+
 
 \title{Design Report}
 \author{Your Name}
@@ -17,11 +24,99 @@
 \end{titlepage}
 
 \section{Abstract}
+
+Quadriplegic individuals face significant challenges in mobility due to limited control options for wheelchairs. Existing solutions, such as hand, head, and sip-and-puff controls, fail to provide universal accessibility. This paper presents \chair, a novel Brain-Computer Interface (BCI)-enabled wheelchair control system that leverages EEG signal processing and AI to create a customizable and adaptive mobility solution. We discuss current state-of-the-art control methods, the technological advancements in BCI, and our proposed system's potential to revolutionize wheelchair mobility.
+
 \section{Problem Statement}
+
+The global wheelchair user base exceeds 65 million, with 5 million individuals suffering from quadriplegia. Traditional control mechanisms rely on residual motor function, making them unsuitable for users with severe neuromuscular disorders. 
+
+\subsection{Existing Control Mechanisms}
+\begin{itemize}
+    \item Hand control (joysticks)
+    \item Head control (tilt sensors)
+    \item Sip-and-puff systems (breath-based control)
+    \item Chin control (limited effectiveness for advanced neuromuscular diseases)
+\end{itemize}
+
+These approaches are often cumbersome, require extensive training, and do not account for degenerative conditions where motor function continues to decline.
+
 \section{State of the Art}
+
+Recent advancements in assistive technology have introduced alternative wheelchair control methods:
+
+\subsection{Advanced Joystick and Voice Control}
+Voice commands and AI-assisted joystick input offer improvements in accessibility but still depend on the user's residual mobility or speech capabilities.
+
+\subsection{Brain-Computer Interfaces (BCI)}
+BCI technology interprets neural activity to control external devices, offering a promising avenue for hands-free and muscle-independent wheelchair navigation.
+
+\subsection{EEG-Based Signal Processing}
+BCI systems rely on Electroencephalography (EEG) to capture brain signals. The processing pipeline consists of:
+\begin{itemize}
+    \item Signal Acquisition: Raw EEG data collection.
+    \item Preprocessing: Noise removal and normalization.
+    \item Feature Extraction: Techniques such as Common Spatial Patterns (CSP) and Fast Fourier Transform (FFT).
+    \item Classification: Machine learning models (SVM, LDA, CNN) to map EEG patterns to wheelchair commands.
+\end{itemize}
+
+\subsection{Challenges in BCI Implementation}
+\begin{itemize}
+    \item High variability in EEG signals between users.
+    \item Noise and artifacts from muscle movements.
+    \item Lengthy calibration times.
+\end{itemize}
+
 \section{Proposed Solution}
+
+\chair integrates cutting-edge BCI technologies with machine learning-based classifiers for real-time wheelchair control. Our approach focuses on:
+
+\subsection{BCI Hardware Selection}
+We evaluate multiple EEG headsets based on usability and affordability:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+    \toprule
+    Device & Features \\
+    \midrule
+    OpenBCI & Open-source, full raw data access \\
+    Muse & User-friendly, beginner-friendly \\
+    Unicorn Hybrid Black & Research-grade, professional use \\
+    Emotiv & Consumer-friendly, wireless design \\
+    Neurosity & Developer-focused, cloud integration \\
+    NeuroSky MindWave & Affordable, entry-level \\
+    \bottomrule
+    \end{tabular}
+    \caption{Comparison of EEG hardware options}
+\end{table}
+
+\subsection{Customizable AI Training}
+Users can train their AI classifier in under an hour, allowing for personalized movement control with no predefined presets. The intuitive setup ensures ease of use, even for non-technical users.
+
 \section{Organization}
+
+The development and deployment of \chair follow a structured timeline:
+\begin{itemize}
+    \item February: AI backend development, hardware procurement.
+    \item March: Virtual testing environment setup.
+    \item April: AI training interface implementation.
+    \item May: Beta testing phase.
+    \item Summer 2025: Global launch.
+\end{itemize}
+
+Our interdisciplinary team combines expertise in computer science, aerospace engineering, and mathematics to bring \chair to life.
+
 \section{Conclusion}
+
+\chair represents a significant leap forward in mobility solutions for quadriplegic individuals. By harnessing BCI technology, we enable seamless and intuitive wheelchair control, reducing dependency on physical movement. Future work includes optimizing classification models, reducing calibration time, and expanding accessibility to lower-cost EEG solutions.
+
+\begin{thebibliography}{9}
+\bibitem{who} World Health Organization, \textit{Guidelines on the Provision of Manual Wheelchairs in Less-Resourced Settings}. \url{https://www.who.int/publications/i/item/guidelines-on-the-provision-of-manual-wheelchairs-in-less-resourced-settings}.
+\bibitem{neurorehab} Journal of NeuroEngineering and Rehabilitation, \textit{Advanced Control Strategies for Quadriplegic Wheelchair Users}. \url{https://www.nature.com/articles/sc2012158}.
+\bibitem{frontiers} Frontiers in Robotics and AI, \textit{Brain-Computer Interfaces for Assistive Technologies}. \url{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.885610/full}.
+\end{thebibliography}
+
+Here's a \chair\ for you
 
 \end{document}
 
