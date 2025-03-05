@@ -88,34 +88,49 @@ The processing pipeline consists of:
     \item Lengthy calibration times.
 \end{itemize}
 
-\section{Proposed Solution}
+\section{Our Approach}
 
 \chair integrates cutting-edge BCI technologies with machine learning-based
-classifiers for real-time wheelchair control. Our approach focuses on:
+classifiers for real-time wheelchair control, extending accessibility to
+a wider range of users, and providing an innovative alternative to conventional control systems.
 
-\subsection{BCI Hardware Selection}
-We evaluate multiple EEG headsets based on usability and affordability:
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{ll}
-    \toprule
-    Device & Features \\
-    \midrule
-    OpenBCI & Open-source, full raw data access \\
-    Muse & User-friendly, beginner-friendly \\
-    Unicorn Hybrid Black & Research-grade, professional use \\
-    Emotiv & Consumer-friendly, wireless design \\
-    Neurosity & Developer-focused, cloud integration \\
-    NeuroSky MindWave & Affordable, entry-level \\
-    \bottomrule
-    \end{tabular}
-    \caption{Comparison of EEG hardware options}
-\end{table}
+In this section, we discuss the key components of the \chair system, including:
+\begin{itemize}
+    \item \textbf{Hardware}: The multiple options for EEG-based BCI devices, and their main features.
+    \item \textbf{Usability}: The AI training process and its customization features.
+\end{itemize}
 
-\subsection{Customizable AI Training}
-Users can train their AI classifier in under an hour, allowing for
-personalized movement control with no predefined presets. The intuitive
-setup ensures ease of use, even for non-technical users.
+
+\subsection{Hardware}
+
+A key component of the \chair system is the BCI headset employed for the measurement of brain
+signals. There is a wide array of EEG-based devices available, each with unique features
+and target audiences. The choice of hardware is crucial to the system's performance and
+usability; therefore, we must compare a selection of such devices, balancing factors
+such as customizability, usability, and data quality:
+
+\begin{itemize}
+    \item \textbf{OpenBCI:} OpenBCI is the most \textit{open-source} and \textit{customizable} EEG platform, making it the top choice for \textit{researchers} and \textit{developers} who want full control over both hardware and software. Their flagship models, the Cyton and Cyton + Daisy, offer up to 16 channels of raw EEG data without any subscription or data restrictions. Combined with the Ultracortex Mark IV headset, OpenBCI provides high-precision data acquisition with 3D-printable, modular components. The large community and Python, MATLAB, and OpenBCI GUI integrations make it the most flexible tool for AI model training.
+    \item \textbf{Muse:} Muse offers the most \textit{user-friendly} and \textit{accessible} EEG headset, designed for meditation, mindfulness, and \textit{light EEG experimentation}. The Muse 2 and Muse S are both affordable, lightweight, and comfortable, with built-in sensors for EEG, heart rate, and motion tracking. While the device only provides 4 channels of EEG data and requires a paid subscription for raw data access, its ease of use and accompanying app make it one of the best options for non-technical users or beginners looking to explore neurofeedback.
+    \item \textbf{Unicorn Hybrid Black:} The Unicorn Hybrid Black stands out for offering \textit{research-grade EEG quality} in a compact, wireless headset. With 8 channels and precise dry electrodes, it is ideal for applications like brain-computer interfaces and machine learning experiments. While more expensive than Muse or NeuroSky, it delivers higher signal quality without requiring extensive setup, making it an excellent option for \textit{researchers who need professional results} without the hassle of building their own hardware.
+    \item \textbf{NeuroSky MindWave:} NeuroSky MindWave is the \textit{most affordable} EEG device on the market, making it a great entry-level option for \textit{educational purposes} and \textit{simple brain-computer interface projects}. Its single-channel sensor makes it less precise than other devices, but it remains a popular option for introductory applications like attention monitoring or meditation apps. The data access is limited, but it offers a low-cost gateway into the world of EEG technology.
+    \item \textbf{Neurosity:} The Neurosity Crown is the best \textit{developer-focused} EEG headset, designed specifically to integrate with AI applications and cloud-based software. It provides 8 EEG channels and runs on a Linux-based system, allowing developers to build full-stack BCI applications directly from the device. Though the quality of raw data access is somewhat restricted compared to OpenBCI, the seamless API integration and support for JavaScript and cloud computing make it an attractive option for \textit{software engineers} who want to create brain-powered apps quickly.
+    \item \textbf{Emotiv:} Emotiv offers the best \textit{balance between research and consumer usability}, with a range of wireless EEG devices for both personal and scientific use. The Emotiv Insight 2 is a lightweight, 5-channel headset geared toward personal wellness, while the EPOC X offers 14 channels of high-quality data for research applications. Emotiv's platform provides an intuitive interface for beginners while still granting access to raw EEG data for advanced users, making it one of the most \textit{versatile} brands on the market.
+\end{itemize}
+
+\subsection{Usability}
+
+The \chair system allows users to personalize their wheelchair control experience through
+AI-based training. The system supports the following features:
+
+\begin{itemize}
+    \item \textbf{Personalized AI Training:} The AI classifier is trained in under one hour, adapting to the user's unique brain patterns.
+    \item \textbf{Fast and Easy Setup:} The interface is intuitive and does not require technical expertise.
+    \item \textbf{Seamless Integration:} The system automatically manages the connection between the BCI hardware and the wheelchair.
+\end{itemize}
+
+This user-centric design prioritizes accessibility, ensuring that the system focuses on
+usability rather than technical complexity.
 
 \section{Organization}
 
