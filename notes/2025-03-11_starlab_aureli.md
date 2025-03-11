@@ -1,0 +1,137 @@
+- Aureli from starlab
+- https://www.linkedin.com/in/aurelisoriafrisch/
+
+11:35
+- Martí begins
+- explains project, controlling wheelchair
+- we are researching SOTA
+- which kind of headgear to use
+- Andreu mentioned the possibility of collaborating with you
+11:37
+- zach asks if motor imagery is the right usage
+- aureli:
+	- classic usage of motor imagery
+		- often poor success
+			- but still good to try again
+		- several datasets that are open to use
+		- bci competitions
+		- the good news is we can compare our model with the state of the art
+- martí:
+	- why do you think motor imagery control has not been successful
+	- I didn't have this feeling from the literature
+- aureli
+	- other types are visual / evoked stimuli
+		- answering to evoked stimuli
+	- difficult because of inter- and intra-subject 
+- benjamin blankhertz ??
+	- interesting discussion on this
+11:40
+- martí:
+	- we thought of solving inter=person variability by having a model that can be trained
+- bruno:
+	- more customizable because the user can choose the way they want to control
+- aureli:
+	- this is the classic strategy
+- bruno:
+	- is motor imagery the best strategy?
+- aureli:
+	- it's worth doing
+	- is this a master thesis
+11:44
+- zach: as this is an HCI project, we are doing surveys, designing the interface itself, focusing on the customizability
+- aureli:
+	- not aware of any studies that have reached the wheelchair control phase
+	- EPFL studies (not in spain)
+- martí:
+	- I have seen promising publications on motor imagery. why is it difficult?
+	- what do you do at starlabs?
+- aureli
+	- it is difficult to sell BCI for controlling (active BCI)
+	- much more focused on BCI on effective computing, response to external stimuli (passive BCI)
+	- we have been approached recently for neuro-prosthetic control
+	- using an exoskeleton to understand motor imagery
+	- understanding the moment in which they want to use their limbs
+	- approached by a ukrainian entrepaneur
+		- would like to control hand prosthetics
+	- company in madrid
+		- would like to control exoskeletons
+- marti
+	- does your headset offer the raw EEG signals?
+		- yes
+	- this is a drawback to many of the headsets offered on the market
+	- how have these projects been? (controlling exoskeletons)
+- aureli
+	- it's possible to detect motor intention
+	- it's a matter of the level of performance for several subjects
+- andreu
+	- is motor control a good area of research?
+		- yes
+- aureli
+	- there are very few people who are quadriplegic
+	- it might make sense to focus on prosthetics
+- zach:
+	- is there a project in between the simplicity of wheelchair control and the complexity of hand prosthetic control
+- aureli
+	- there may not be something in between
+	- we have not worked with lower limb control
+	- one challenge is that exoskeletons and prosthetics are expensive
+- bruno
+	- we are intending to use a virtual simulation at this stage
+	- electric wheelchair would also be very expensive
+- marti
+	- there are virtual environments we could use, e.g. opengym
+- aureli
+	- I don't know open gym
+	- openvibe [https://openvibe.inria.fr/](https://openvibe.inria.fr/)
+- zach
+	- how does the exoskeleton
+- aureli
+	- lower limb control, movement detection
+	- we are interested in a dataset of lower limb detection of 20-30 people
+- marti
+	- probably those without control of the lower limbs
+- aureli
+	- haven't seen the use case of wheelchair
+- zach
+	- use case of exoskeleton
+- aureli
+	- for those with impairments in the lower limbs
+	- helping those who are paraplegic
+	- there's a spinoff from UPC working on helping paraplegics
+	- also for rehabilitation
+- bruno
+	- how would collaboration work
+- aureli
+	- up to andreu but
+	- we would sign a collaboration agreement
+		- we agree to provide data
+	- the team receiving the device would be responsible
+- zach
+	- the idea of collaborating is interesting
+	- we will need to discuss more
+- aureli
+	- what is the timeline
+		- till may, 2 months
+	- we have to check that the device is available
+	- maybe it's not needed for all 2 months
+	- just for data gathering, and for presentation
+- andreu
+	- we could begin with existing BCI data, from competitions
+- aureli
+	- defining the protocol is difficult
+		- in order to use the data afterwards
+- andreu
+	- it's probably best to begin with existing data
+- zach
+	- would it be OK to only use existing data and not have a working demo
+		- andreu: yes
+- aureli
+	- it's not easy in 2 months to prototype something
+12:10
+- andreu
+	- do you have the link for the BCI competition?
+- aureli
+	- yes there are several
+		- [https://www.bci2000.org/mediawiki/index.php/Main_Page](https://www.bci2000.org/mediawiki/index.php/Main_Page)
+		- [https://www.bbci.de/competition/](https://www.bbci.de/competition/)
+	- when you are doing a literature review, you will find more datasets
